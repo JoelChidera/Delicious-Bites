@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #FF6B6B; /* Coral Red */
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #000;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #FFD93D; /* Sun Yellow */
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #FF6B6B; /* Coral Red on hover */
+}
+
+/* Menu Section */
+#menu {
+    padding: 50px 20px;
+    background: #f4f4f4; /* Light Grey */
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #FF6B6B; /* Coral Red */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Carousel Styles */
+#carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: none; /* Hide images by default */
+}
+
+.carousel img.active {
+    display: block; /* Show only the active image */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Testimonials Styles */
+#testimonials {
+    padding: 50px 20px;
+    background: #FFF3E4; /* Light peach background */
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #FF6B6B;
+    border-radius: 10px;
+    background: white;
+}
+
+/* Special Offers Styles */
+#offers {
+    padding: 50px 20px;
+    background: #FFE4E1; /* Light pink background */
+    text-align: center;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.offer {
+    max-width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #FFD93D;
+    border-radius: 10px;
+    background: white;
+}
+
+.social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 24px; /* Size of the icons */
+    color: #FF6B6B; /* Coral Red */
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #FFD93D; /* Change color on hover */
+}
+
+footer {
+    background: #FF6B6B; /* Coral Red */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        max-width: 80%;
+    }
+}
